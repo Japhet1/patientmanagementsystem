@@ -61,7 +61,6 @@ const CustomFormField = (props: CustomFormFieldProp) => {
 
     const { control, fieldType, name, label } = props
 
-
     return (
         <FormField
             control={control}
