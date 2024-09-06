@@ -15,7 +15,8 @@ export const {
 const client = new sdk.Client()
 client.setEndpoint(ENDPOINT!).setProject(PROJECT_ID!).setKey(API_KEY!)
 
-const database = new sdk.Databases(client)
-const storage = new sdk.Storage(client)
-const messaging = new sdk.Messaging(client)
-const users = new sdk.Users(client)
+
+// const database = new sdk.Databases(client)
+// const storage = new sdk.Storage(client)
+// const messaging = new sdk.Messaging(client)
+// const users = new sdk.Users(client)

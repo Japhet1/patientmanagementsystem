@@ -7,13 +7,14 @@ import { Form } from "@/components/ui/form"
 import CustomFormField from "../customFormField"
 import { FormFieldType } from "@/lib/types"
 import SubmitButton from "../submitButton"
-import { useState } from "react"
+// import { useState } from "react"
 import { userFormValidation } from "@/lib/validation"
 
 
 const PatientForm = () => {
 
-    const [ isLoading, setIsLoading ] = useState(false)
+    // const [ isLoading, setIsLoading ] = useState(false)
+
      // 1. Define your form.
      const form = useForm<z.infer<typeof userFormValidation>>({
         resolver: zodResolver(userFormValidation),
@@ -63,7 +64,7 @@ const PatientForm = () => {
                     label="Phone"
                     placeholder="(225) 654-1487"
                 />
-                <SubmitButton isLoading={isLoading}>Get started</SubmitButton>
+                <SubmitButton >Get started</SubmitButton>
             </form>
         </Form>
     )
