@@ -22,7 +22,6 @@ const SubmitButton = ({ isLoading, className, children }: SubmitButtonProp) => {
                     Loading
                 </div>
             ) : children }
-            
         </Button>
     )
 }
